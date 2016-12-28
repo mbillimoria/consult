@@ -1,0 +1,10 @@
+{
+  "name": "consult",
+  "version": "0.0.1",
+  "description": "An application for workflow and resourcing for consulting organisations",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Michael Billimoria"
+}
