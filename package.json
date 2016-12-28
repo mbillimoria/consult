@@ -4,7 +4,11 @@
   "description": "An application for workflow and resourcing for consulting organisations",
   "repository": {
     "type": "git",
-    "url": "?.git"
+    "url": "https://github.com/mbillimoria/consult.git"
   },
-  "author": "Michael Billimoria"
+  "author": "Michael Billimoria",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8"
+  }
 }
