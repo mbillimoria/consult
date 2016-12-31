@@ -1,1 +1,17 @@
-// Testing SASS
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #eee8d6;
+  color: #022933;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
