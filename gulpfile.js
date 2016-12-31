@@ -12,4 +12,8 @@ gulp.task('js', function() {
     .pipe(gulp.dest('builds/development/js'))
 });
 
-gulp.task('default', ['js']);
+gulp.task('watch', function() {
+  gulp.watch(jsSources, ['js']);
+});
+
+gulp.task('default', ['js', 'watch']);
