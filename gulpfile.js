@@ -11,3 +11,5 @@ gulp.task('js', function() {
     .pipe(browserify())
     .pipe(gulp.dest('builds/development/js'))
 });
+
+gulp.task('default', ['js']);
