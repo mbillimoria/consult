@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     browserify = require('gulp-browserify'),
     compass = require('gulp-compass'),
+    sourcemaps = require('gulp-sourcemaps'),
     connect = require('gulp-connect'),
     concat = require('gulp-concat');
 
@@ -20,12 +21,15 @@ gulp.task('js', function() {
 
 gulp.task('compass', function() {
   gulp.src(sassSources)
+    .pipe(sourcemaps.init())
     .pipe(compass({
       sass: 'components/sass',
       image: 'builds/development/images',
-      style: 'expanded'
+      style: 'expanded',
+      sourcemap: true
     })
     .on('error', gutil.log))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('builds/development/css'))
     .pipe(connect.reload())
 });

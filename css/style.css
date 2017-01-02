@@ -1,17 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial|Nunito");
 html {
   font-size: 62.5%;
 }
 
 body {
-  background-color: #eee8d6;
-  color: #022933;
-  font-family: 'Helvetica', sans-serif;
+  background-color: #f2f4fd;
+  color: #445397;
+  font-family: "Questrial", Helvetica, sans-serif;
   font-size: 1.8rem;
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #6983fb;
+  font-family: "Nunito", Helvetica, sans-serif;
 }
 
 .container {
   margin: 0 auto;
   width: 80%;
 }
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -14,7 +14,7 @@ rules:
   # Line Spacing
   one-declaration-per-line: 1
   empty-line-between-blocks: 1
-  single-line-per-selector: 1
+  single-line-per-selector: 0
 
   # Disallows
   no-attribute-selectors: 0
@@ -38,8 +38,8 @@ rules:
   no-trailing-zero: 1
   no-transition-all: 1
   no-universal-selectors: 0
-  no-url-domains: 1
-  no-url-protocols: 1
+  no-url-domains: 0
+  no-url-protocols: 0
   no-vendor-prefixes: 1
   no-warn: 1
   property-units: 0
@@ -63,7 +63,7 @@ rules:
   bem-depth: 0
   border-zero: 1
   brace-style: 1
-  clean-import-paths: 1
+  clean-import-paths: 0
   empty-args: 1
   hex-length: 1
   hex-notation: 1

@@ -1,0 +1,22 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-background;
+  color: $color-main;
+  font-family: $font-main;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-headlines;
+  font-family: $font-highlight;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
