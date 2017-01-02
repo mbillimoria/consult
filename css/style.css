@@ -31,19 +31,28 @@ h1, h2, h3, h4, h5, h6 {
 .main-table .banner {
   background-color: #ddd;
   border: 1px solid #445397;
-  height: 30px;
+  height: 5vh;
   padding: 10px;
 }
 .main-table .navbar {
   background-color: #999;
   border: 1px solid #445397;
   padding: 10px;
-  width: 15%;
+  vertical-align: top;
+}
+.main-table .navbar ul {
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  position: fixed;
+  width: 25%;
 }
 .main-table .options {
   background-color: #f2fdf5;
   border: 1px solid #445397;
-  height: 20px;
+  height: 3vh;
   padding: 10px;
   width: 85%;
 }

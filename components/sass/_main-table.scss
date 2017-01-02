@@ -7,7 +7,7 @@
   .banner {
     background-color: $lightgrey;
     border: 1px solid $darkblue;
-    height: 30px;
+    height: 5vh;
     padding: 10px;
 
   }
@@ -16,14 +16,23 @@
     background-color: $grey;
     border: 1px solid $darkblue;
     padding: 10px;
-    width: 15%;
+    vertical-align: top;
 
+    ul {
+      height: 100%;
+      list-style-type: none;
+      margin: 0;
+      overflow: auto;
+      padding: 0;
+      position: fixed;
+      width: 25%;
+    }
   }
 
   .options {
     background-color: $lightgreen;
     border: 1px solid $darkblue;
-    height: 20px;
+    height: 3vh;
     padding: 10px;
     width: 85%;
 
