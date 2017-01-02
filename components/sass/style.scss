@@ -1,15 +1,5 @@
-@import '_colorpalette.scss';
-@import '_fonts.scss';
-@import '_base.scss';
-
-$color-main: $darkblue;
-$color-background: $lightblue;
-$color-headlines: $blue;
-
-$font-main: 'Questrial', Helvetica, sans-serif;
-$font-highlight: 'Nunito', Helvetica, sans-serif;
-
-.container {
-  margin: 0 auto;
-  width: 80%;
-}
+// @import 'normalize';
+@import 'colorpalette';
+@import 'fonts';
+@import 'base';
+@import 'main-table';

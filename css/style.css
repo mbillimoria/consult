@@ -19,12 +19,38 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   margin: 0 auto;
-  width: 80%;
+  width: 99.5%;
 }
 
-.container {
-  margin: 0 auto;
-  width: 80%;
+.main-table {
+  border: 1px solid #445397;
+  border-collapse: collapse;
+  height: 100vh;
+  width: 100%;
+}
+.main-table .banner {
+  background-color: #ddd;
+  border: 1px solid #445397;
+  height: 30px;
+  padding: 10px;
+}
+.main-table .navbar {
+  background-color: #999;
+  border: 1px solid #445397;
+  padding: 10px;
+  width: 15%;
+}
+.main-table .options {
+  background-color: #f2fdf5;
+  border: 1px solid #445397;
+  height: 20px;
+  padding: 10px;
+  width: 85%;
+}
+.main-table .content-area {
+  border: 1px solid #445397;
+  padding: 10px;
+  width: 85%;
 }
 
 /*# sourceMappingURL=style.css.map */

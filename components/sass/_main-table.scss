@@ -1,0 +1,37 @@
+.main-table {
+  border: 1px solid $darkblue;
+  border-collapse: collapse;
+  height: 100vh;
+  width: 100%;
+
+  .banner {
+    background-color: $lightgrey;
+    border: 1px solid $darkblue;
+    height: 30px;
+    padding: 10px;
+
+  }
+
+  .navbar {
+    background-color: $grey;
+    border: 1px solid $darkblue;
+    padding: 10px;
+    width: 15%;
+
+  }
+
+  .options {
+    background-color: $lightgreen;
+    border: 1px solid $darkblue;
+    height: 20px;
+    padding: 10px;
+    width: 85%;
+
+  }
+
+  .content-area {
+    border: 1px solid $darkblue;
+    padding: 10px;
+    width: 85%;
+  }
+}
