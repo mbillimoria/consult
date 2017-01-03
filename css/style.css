@@ -476,8 +476,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
 }
 .main-table .navbar {
-  background: linear-gradient(to bottom right, #ddd, #999);
-  border: 1px solid #f2f4fd;
+  background: linear-gradient(to bottom right, #ddd, #9d9d9d);
   height: 2vh;
 }
 .main-table .navbar ul {
@@ -506,15 +505,14 @@ h1, h2, h3, h4, h5, h6 {
   float: right;
 }
 .main-table .options {
-  background-color: #f2f4fd;
-  border: 1px solid #f2f4fd;
+  background: linear-gradient(to bottom right, #f2f4fd, #b0bcf3);
+  border: 1px solid #6983fb;
   height: 2vh;
-  padding: 10px;
+  padding: 5px 0 5px 20px;
 }
 .main-table .content-area {
-  background-color: #fdfbf2;
-  border: 1px solid #f2f4fd;
-  padding: 10px;
+  background: linear-gradient(to bottom right, #fdfbf2, #f3e7b0);
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

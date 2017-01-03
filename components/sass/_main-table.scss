@@ -11,8 +11,7 @@
   }
 
   .navbar {
-    background: linear-gradient(to bottom right, $lightgrey, $grey);
-    border: 1px solid $lightblue;
+    background: linear-gradient(to bottom right, $lightgrey, darken($lightgrey, 25%));
     height: 2vh;
 
     ul {
@@ -34,11 +33,12 @@
         padding-top: 5px;
         text-align: center;
         text-decoration: none;
+
+        &:hover {
+          background-color: $grey;
+        }
         }
 
-      a:hover {
-        background-color: $grey;
-      }
     }
 
     .nav-right {
@@ -47,16 +47,14 @@
   }
 
   .options {
-    background-color: $lightblue;
-    border: 1px solid $lightblue;
+    background: linear-gradient(to bottom right, $lightblue, darken($lightblue, 15%));
+    border: 1px solid $blue;
     height: 2vh;
-    padding: 10px;
-
+    padding: 5px 0 5px 20px;
   }
 
   .content-area {
-    background-color: $lightyellow;
-    border: 1px solid $lightblue;
-    padding: 10px;
+    background: linear-gradient(to bottom right, $lightyellow, darken($lightyellow, 15%));
+    padding: 20px;
   }
 }
