@@ -5,6 +5,20 @@ var ReactDOM = require('react-dom');
 
 var MainInterface = React.createClass({
   render: function() {
-    return <h1>CONTENT AREA</h1>
+    return (
+    <div>
+      <h1>CONTENT AREA</h1>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+  )
   }
 });
+
+ReactDOM.render(
+  <MainInterface />,
+  document.getElementById('contentArea')
+);
