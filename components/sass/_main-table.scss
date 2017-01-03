@@ -1,46 +1,62 @@
 .main-table {
-  border: 1px solid $darkblue;
   border-collapse: collapse;
   height: 100vh;
   width: 100%;
 
   .banner {
-    background-color: $lightgrey;
-    border: 1px solid $darkblue;
-    height: 5vh;
+    background-color: $lightblue;
+    height: 3vh;
     padding: 10px;
 
   }
 
   .navbar {
-    background-color: $grey;
-    border: 1px solid $darkblue;
-    padding: 10px;
-    vertical-align: top;
+    background: linear-gradient(to bottom right, $lightgrey, $grey);
+    border: 1px solid $lightblue;
+    height: 2vh;
 
     ul {
-      height: 100%;
       list-style-type: none;
       margin: 0;
-      overflow: auto;
+      overflow: hidden;
       padding: 0;
-      position: fixed;
-      width: 25%;
+    }
+
+    li {
+      float: left;
+
+      a {
+        color: $darkgrey;
+        display: block;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        text-align: center;
+        text-decoration: none;
+        }
+
+      a:hover {
+        background-color: $grey;
+      }
+    }
+
+    .nav-right {
+      float: right;
     }
   }
 
   .options {
-    background-color: $lightgreen;
-    border: 1px solid $darkblue;
-    height: 3vh;
+    background-color: $lightblue;
+    border: 1px solid $lightblue;
+    height: 2vh;
     padding: 10px;
-    width: 85%;
 
   }
 
   .content-area {
-    border: 1px solid $darkblue;
+    background-color: $lightyellow;
+    border: 1px solid $lightblue;
     padding: 10px;
-    width: 85%;
   }
 }
