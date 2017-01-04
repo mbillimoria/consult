@@ -1,4 +1,4 @@
-//These libraries are appended by Browserify
+//These libraries will be appended by Browserify
 var $ = require('jquery');
 var React = require('react');
 var ReactDOM = require('react-dom');
