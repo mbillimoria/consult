@@ -515,4 +515,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
 }
 
+.res-table {
+  border: 1px solid #999;
+  border-collapse: collapse;
+}
+
 /*# sourceMappingURL=style.css.map */

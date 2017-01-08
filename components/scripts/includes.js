@@ -8,11 +8,10 @@ var MainInterface = React.createClass({
     return (
     <div>
       <h1>CONTENT AREA</h1>
-      <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-      </ul>
+      <table className="res-table">
+        <tr></tr>
+          <th>1</th>
+      </table>
     </div>
   )
   }
