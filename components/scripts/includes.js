@@ -4,13 +4,22 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 var MainInterface = React.createClass({
+  getInitialState: function() {
+    return {
+      type: "Some content here"
+    } //return
+  }, //getInitialState
+
   render: function() {
     return (
     <div>
       <h1>CONTENT AREA</h1>
       <table className="res-table">
-        <tr></tr>
-          <th>1</th>
+        <thead>
+          <tr>
+            <th>{ this.state.type }</th>
+          </tr>
+        </thead>
       </table>
     </div>
   )
