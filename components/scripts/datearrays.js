@@ -20,15 +20,27 @@ function getDateArray(type) {
     var nextDay = new Date();
     for (i=0; i < 5; i++) {
       nextDay = new Date(nextDay.setDate(MondayOfThisWeek.getDate()+i));
-      dateArray[i] = dateFormat(nextDay, "dd-mm");
+      dateArray[i] = dateFormat(nextDay, "dd");
       nextDay = new Date();
     }
   } else if (type =="m") {
 
+    // Get the first and last days of the current month
+    var monthStart = new Date(currentDate.getYear(), currentDate.getMonth(), 1);
+    var monthEnd = new Date(currentDate.getYear(), currentDate.getMonth() + 1, 1);
+    var monthLength = (monthEnd - monthStart) / (1000 * 60 * 60 * 24)
+
+    //Populate the array with the days in that month
+    var nextDay = new Date();
+    for (i=0; i < monthLength; i++) {
+      nextDay = new Date(nextDay.setDate(monthStart.getDate()+i));
+      dateArray[i] = dateFormat(nextDay, "dd");
+      nextDay = new Date();
+    }
   }
 
   //return
   return dateArray;
 }
 
-document.getElementById("test").innerHTML = "Values were: " + getDateArray("w");
+document.getElementById("test").innerHTML = "Values were: " + getDateArray("m");
