@@ -1,5 +1,6 @@
 //These libraries will be appended by Browserify
-var $ = require('jquery');
+//var $ = require('jquery');
+//var _ = require('lodash');
 var React = require('react');
 var ReactDOM = require('react-dom');
 

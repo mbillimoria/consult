@@ -1,4 +1,5 @@
 var dateFormat = require('dateformat');
+var _ = require('lodash');
 
 function getDateArray(type) {
   //Get the current Date
@@ -34,8 +35,19 @@ function getDateArray(type) {
     var nextDay = new Date();
     for (i=0; i < monthLength; i++) {
       nextDay = new Date(nextDay.setDate(monthStart.getDate()+i));
-      dateArray[i] = dateFormat(nextDay, "dd");
+      // Remove weekends
+      switch (nextDay.getDay())
+      {
+        case 0:
+          break
+        case 6:
+          break
+        default:
+          dateArray[i] = dateFormat(nextDay, "dd");
+      }
       nextDay = new Date();
+      // Get rid of the null values in the array
+      dateArray = _.compact(dateArray);
     }
   }
 
