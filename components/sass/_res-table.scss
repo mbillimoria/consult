@@ -1,4 +1,8 @@
 .res-table {
   border: 1px solid $grey;
   border-collapse: collapse;
+
+  th {
+    border: 1px solid $grey;
+  }
 }

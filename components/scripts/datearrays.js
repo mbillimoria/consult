@@ -46,7 +46,7 @@ function getDateArray(type) {
           dateArray[i] = dateFormat(nextDay, "dd");
       }
       nextDay = new Date();
-      // Get rid of the null values in the array
+      // Get rid of the null values in the array (using lodash)
       dateArray = _.compact(dateArray);
     }
   }
@@ -54,5 +54,3 @@ function getDateArray(type) {
   //return
   return dateArray;
 }
-
-document.getElementById("test").innerHTML = "Values were: " + getDateArray("m");

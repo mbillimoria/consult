@@ -513,11 +513,15 @@ h1, h2, h3, h4, h5, h6 {
 .main-table .content-area {
   background: linear-gradient(to bottom right, #fdfbf2, #f3e7b0);
   padding: 20px;
+  vertical-align: top;
 }
 
 .res-table {
   border: 1px solid #999;
   border-collapse: collapse;
+}
+.res-table th {
+  border: 1px solid #999;
 }
 
 /*# sourceMappingURL=style.css.map */

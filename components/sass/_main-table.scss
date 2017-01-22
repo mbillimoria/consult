@@ -56,5 +56,6 @@
   .content-area {
     background: linear-gradient(to bottom right, $lightyellow, darken($lightyellow, 15%));
     padding: 20px;
+    vertical-align: top;
   }
 }
