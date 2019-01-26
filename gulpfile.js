@@ -11,21 +11,21 @@ var htmlSources = ['builds/development/*.html'];
 var sassSources = ['components/sass/style.scss'];
 
 
-gulp.task('js', function() {
+gulp.task('js', async function() {
   gulp.src(jsSources)
     .pipe(concat('script.js'))
     .pipe(browserify({
       transform: 'reactify',
       debug: true
     }))
-    .on('error', function(err) {
+    .on('error', async function(err) {
       console.error('Error!', err.message);
     })
     .pipe(gulp.dest('builds/development/js'))
     .pipe(connect.reload())
 });
 
-gulp.task('compass', function() {
+gulp.task('compass', async function() {
   gulp.src(sassSources)
     .pipe(sourcemaps.init())
     .pipe(compass({
@@ -41,22 +41,22 @@ gulp.task('compass', function() {
     .pipe(connect.reload())
 });
 
-gulp.task('html', function() {
+gulp.task('html', async function() {
   gulp.src(htmlSources)
     .pipe(connect.reload())
 });
 
-gulp.task('watch', function() {
-  gulp.watch(jsSources, ['js']);
-  gulp.watch(htmlSources, ['html']);
-  gulp.watch('components/sass/*.scss', ['compass']);
+gulp.task('watch', async function() {
+  gulp.watch(jsSources, gulp.series('js'));
+  gulp.watch(htmlSources, gulp.series('html'));
+  gulp.watch('components/sass/*.scss', gulp.series('compass'));
 });
 
-gulp.task('connect', function() {
+gulp.task('connect', async function() {
   connect.server({
     root: 'builds/development/',
     livereload: true
   });
 });
 
-gulp.task('default', ['html', 'compass', 'js', 'connect', 'watch']);
+gulp.task('default', gulp.series('html', 'compass', 'js', 'connect', 'watch'));

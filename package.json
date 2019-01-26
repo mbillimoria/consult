@@ -8,20 +8,23 @@
   },
   "author": "Michael Billimoria",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "envify": "^4.1.0",
+    "gulp": "^4.0.0",
     "gulp-browserify": "^0.5.1",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.1",
-    "gulp-connect": "^5.0.0",
-    "gulp-react": "^3.1.0",
-    "gulp-sourcemaps": "^2.4.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-react": "^4.0.0",
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-util": "^3.0.8",
-    "jquery": "^3.1.1",
-    "lodash": "^4.17.4",
-    "reactify": "^1.1.1"
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "reactify": "^1.1.1",
+    "uglify-js": "^3.4.9",
+    "uglifyify": "^5.0.1"
   },
   "dependencies": {
-    "dateformat": "^2.0.0",
+    "dateformat": "^3.0.3",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   }
