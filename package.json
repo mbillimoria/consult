@@ -26,6 +26,7 @@
   "dependencies": {
     "dateformat": "^3.0.3",
     "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react-dom": "^15.4.1",
+    "shell-quote": "^1.6.1"
   }
 }
