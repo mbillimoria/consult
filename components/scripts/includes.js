@@ -4,29 +4,24 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var MainInterface = React.createClass({
-  getInitialState: function() {
-    return {
+class MainInterface extends React.Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {
       type: "w",
       dateArray: getDateArray("m")
-    } //return
-  }, //getInitialState
+    }
+  }
 
-  componentWillMount: function() {
-    this.setState({
-        dateArray: getDateArray(this.state.type)
-    });
-  },
-
-  render: function() {
-    var chosenDates = this.state.dateArray;
-    chosenDates = chosenDates.map(function(item, index) {
-      return(
-        <th key={index}>{ this.state.dateArray[index]}</th>
-      ) //return
-    }.bind(this)); //chosenDates.map
-
-    return (
+render() {
+  var chosenDates = this.state.dateArray;
+  chosenDates = chosenDates.map(function(item, index) {
+    return(
+      <th key={index}>{ this.state.dateArray[index]}</th>
+    ) //return
+  }.bind(this)); //chosenDates.map
+  return (
     <div>
       <table className="res-table">
         <thead>
@@ -37,8 +32,9 @@ var MainInterface = React.createClass({
       </table>
     </div>
   )
-  }
-});
+}
+
+};
 
 ReactDOM.render(
   <MainInterface />,
